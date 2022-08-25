@@ -110,7 +110,8 @@
  
   7. JOIN
     * jOIN의 방법에는 매우 많은 SQL작성 방법이 있음을 인지하고 공부할 것
- <PRE><CODE> SELECT * FROM A, B WHERE A.NAME = B.NAME; > </CODE></PRE>
+  
+   <PRE><CODE> SELECT * FROM A, B WHERE A.NAME = B.NAME; </CODE></PRE>
  
     * 위 코드는 가장 흔한 조인 방법임, 특정 날짜를 기준으로 조인을 걸 수도 있음
     * (+)표시는 모두 출력할 테이블 반대편에 적어 준다. 
