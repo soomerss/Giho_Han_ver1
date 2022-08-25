@@ -2,14 +2,14 @@
 
 ## 목차
 
-1. 관계형 데이터베이스 개요
-2. SELECT 문
-3. 함수
-4. WHERE 절
-5. GROUP BY, HAVING 절
-6. ORDER BY 절
-7. JOIN
-8. STANDARD JOIN
+#1. 관계형 데이터베이스 개요
+#2. SELECT 문
+#3. 함수
+#4. WHERE 절
+#5. GROUP BY, HAVING 절
+#6. ORDER BY 절
+#7. JOIN
+#8. STANDARD JOIN
 *********************************************
 
 1. 관계형 데이터베이스 개요
@@ -99,7 +99,26 @@
   
    __COMMIT POINT(20220824)__
   
+  5. group by 절, having 절
+    * Select 문의 연산 순서
+     - from > where > group by > select > having
+    * Having은 group by절의 where문으로 이해하면 된다.
+ 
+  6. order by 절
+    * order by column명 > column명을 기준으로 정렬(오름차순 기본)
+    * ORDER BY COLUMN (ASC,DESC) 이때 ORACLE 기준으로 NULL값은 최대치임
+ 
+  7. JOIN
+    * jOIN의 방법에는 매우 많은 SQL작성 방법이 있음을 인지하고 공부할 것
+ <PRE><CODE> SELECT * FROM A, B WHERE A.NAME = B.NAME; > </CODE></PRE>
+    * 위 코드는 가장 흔한 조인 방법임, 특정 날짜를 기준으로 조인을 걸 수도 있음
+    * (+)표시는 모두 출력할 테이블 반대편에 적어 준다. 
   
-  
-  
+  8. STANDARD JOIN
+    * SQL문이 각 벤더사에 따라 다름을 방지하기 위하여 작성하는 법을 표준화함
+    * A INNER JOIN B ON 조건; 
+    * A LEFT JOIN B ON 조건; LEFT JOIN 대신 LEFT OUTER JOIN도 무방
+    * A RIGT JOIN B ON 조건; RIGHT JOIN 대신 RIGHT OUTER JOIN도 무방
+    * A FULL JOIN B ON 조건; FULL JOIN 대신 FULL OUTER JOIN도 무방
+   
   
