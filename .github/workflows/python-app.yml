@@ -37,3 +37,6 @@ jobs:
     - name: Test with pytest
       run: |
         python3 gitaction_test.py
+    - name: checkout
+      run: |
+        ls -al
