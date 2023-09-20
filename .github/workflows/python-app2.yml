@@ -33,4 +33,4 @@ jobs:
       env:
         GIT_TEST: ${{ secrets.AWS_S3 }}
       run: |
-        echo "GIT_TEST secret value: $GIT_TEST"
+        python gitaction_test.py
