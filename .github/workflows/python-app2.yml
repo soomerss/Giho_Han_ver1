@@ -31,6 +31,6 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Print Secret
       env:
-        GIT_TEST: ${{ secrets.GIT_TEST }}
+        GIT_TEST: ${{ secrets.AWS_S3 }}
       run: |
         echo "GIT_TEST secret value: $GIT_TEST"
