@@ -28,6 +28,9 @@ jobs:
         python -m pip install --upgrade pip
         pip install flake8 pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    - name: Lint with flake8
+    - name: hello env
+      env: # Or as an environment variable
+        secret: ${{ GIT_TEST.github_key }}
+    - name: run python
       run: |
         python3 gitaction_test.py
